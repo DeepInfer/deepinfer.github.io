@@ -208,7 +208,7 @@ header {
     header .device-container {
       max-width: none;
       max-height: calc(0vh);
-      margin: 100px auto 0; } }
+      margin: 40% auto 0; } }
 @media (min-width: 992px) {
   header .header-content .header-content-inner h1 {
     font-size: 50px; } }
