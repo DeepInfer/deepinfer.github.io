@@ -159,13 +159,16 @@ p {
     }
   }
 }
-
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: transparent;
+    background-color: #185798;
     border-color: transparent;
     .navbar-header .navbar-brand {
-      color: rgba(255, 255, 255, 0.7);
+      color: white;;
       &:hover, &:focus {
         color: white;
       }
@@ -212,7 +215,7 @@ header {
   /* Chrome 10-25, Safari 5.1-6 */
   background: url("../img/bg-pattern.png"), linear-gradient(to left, $head-primary, $head-secondary);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: #ffffff;
   .header-content {
     text-align: center;
     padding: 150px 0 50px;
@@ -236,7 +239,7 @@ header {
     }
   }
   .device-container {
-    max-width: 300px;
+    max-width: 250px;
     margin: 0 auto 100px;
     .screen img {
       border-radius: 3px;
@@ -246,17 +249,16 @@ header {
 
 @media (min-width: 768px) {
   header {
-    min-height: 100%;
+    min-height: 300px;
     .header-content {
       text-align: left;
       padding: 0;
-      height: 100vh;
+      height: 10vh;
       .header-content-inner {
         max-width: none;
         margin: 0;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 80%;
         h1 {
           font-size: 35px;
         }
