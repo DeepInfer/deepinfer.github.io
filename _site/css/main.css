@@ -67,7 +67,7 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #fdcc52; }
+  color: #062157; }
   a:hover, a:focus {
     color: #fcbd20; }
 
@@ -102,7 +102,7 @@ p {
     font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
     font-weight: 200;
     letter-spacing: 1px;
-    color: #fdcc52; }
+    color: #062157; }
     .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
       color: #fcbd20; }
   .navbar-default .navbar-header .navbar-toggle {
@@ -118,21 +118,23 @@ p {
     .navbar-default .nav > li > a:focus {
       color: #222222; }
     .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus:hover {
-      color: #fdcc52; }
+      color: #062157; }
   .navbar-default .nav > li.active > a {
-    color: #fdcc52 !important;
+    color: #062157 !important;
     background-color: transparent; }
     .navbar-default .nav > li.active > a:focus {
-      color: #fdcc52 !important;
+      color: #062157 !important;
       background-color: transparent; }
     .navbar-default .nav > li.active > a:hover, .navbar-default .nav > li.active > a:focus:hover {
       background-color: transparent; }
 
-.container-full {
-  margin: 0 auto;
-  width: 100%; }
-
 @media (min-width: 768px) {
+  /*
+  .container
+  {
+    width: 100%;
+  }
+  */
   .navbar-default {
     background-color: #185798;
     border-color: transparent; }
@@ -152,13 +154,13 @@ p {
       .navbar-default.affix .navbar-header .navbar-brand {
         color: #222222; }
         .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
-          color: #fdcc52; }
+          color: #062157; }
       .navbar-default.affix .nav > li > a {
         color: #222222; }
         .navbar-default.affix .nav > li > a:focus {
           color: #222222; }
         .navbar-default.affix .nav > li > a:hover, .navbar-default.affix .nav > li > a:focus:hover {
-          color: #fdcc52; } }
+          color: #062157; } }
 header {
   position: relative;
   width: 100%;
@@ -196,7 +198,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    min-height: 300px; }
+    min-height: 250px; }
     header .header-content {
       text-align: left;
       padding: 0;
@@ -218,7 +220,7 @@ header {
 section {
   padding: 100px 0; }
   section h2 {
-    font-size: 50px; }
+    font-size: 40px; }
   section.download {
     padding: 150px 0;
     position: relative; }
@@ -253,7 +255,7 @@ section {
     text-align: center;
     margin-bottom: 100px; }
     section.features .feature-item h3 {
-      font-size: 30px; }
+      font-size: 25px; }
     section.features .feature-item i {
       font-size: 80px;
       background: -webkit-linear-gradient(to left, #43cea2, #185a9d);
@@ -373,12 +375,12 @@ footer {
         text-decoration: none; }
 
 .bg-primary {
-  background: #fdcc52;
-  background: -webkit-linear-gradient(#fdcc52, #fdc539);
-  background: linear-gradient(#fdcc52, #fdc539); }
+  background: #062157;
+  background: -webkit-linear-gradient(#062157, #fdc539);
+  background: linear-gradient(#062157, #fdc539); }
 
 .text-primary {
-  color: #fdcc52; }
+  color: #062157; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;
@@ -390,8 +392,8 @@ footer {
   border: 1px solid; }
   .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
     color: white;
-    background-color: #fdcc52;
-    border-color: #fdcc52; }
+    background-color: #062157;
+    border-color: #062157; }
 
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -427,7 +429,7 @@ body {
     color: white;
     opacity: 0;
     display: block;
-    background: rgba(253, 204, 82, 0.9);
+    background: rgba(6, 33, 87, 0.9);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -513,3 +515,20 @@ body {
     font-size: 55px; }
   .intro-header .post-heading .subheading {
     font-size: 30px; } }
+.btn-xl {
+  padding: 15px 45px;
+  font-size: 14px; }
+
+section.features .feature-item {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+@media (min-width: 992px) {
+  header .header-content .header-content-inner h1 {
+    font-size: 50px; } }
+section {
+  padding: 50px 0; }
+
+section.features .section-heading {
+  margin-bottom: 50px; }

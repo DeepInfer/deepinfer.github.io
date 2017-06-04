@@ -1,7 +1,7 @@
 # Site settings
-title: DeepInfer- Deep Learning Deployment Toolkit for Medical Image Analysis
-email:
-description: A jekyll template for landing pages, portfolio and blogging
+title: DeepInfer- Deep Learning Deployment Toolkit for Medical Imaging
+email: deepinfer@gmail.com
+description: DeepInfer is an open-source toolkit for medical image analysis and processing with deep learning models. DeepInfer seamlessly integrates deep learning technology into the existing medical image analysis platforms such as 3D Slicer. It allows clinical researchers and biomedical engineers to deploy multi-platform pre-trained deep learning models and use task-specific deep models, without the need for further software development and configuration.
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 url: "https://deepinfer.github.io" # the base hostname & protocol for your site
@@ -11,20 +11,15 @@ url: "https://deepinfer.github.io" # the base hostname & protocol for your site
 # data-ad-client: ca-pub-9204963049240271
 # google_ad_client: ca-pub-9204963049240271
 
-# google_analytics: "UA-86331249-1"
+google_analytics: "UA-100441285-1"
 # addthis_id: ra-5644da281510c62f
 # disqus_account: jeky-new-age
 
-# Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
 social:
   - title: twitter
-    url: https://twitter.com/lantoniotrento
-  - title: facebook
-    url: https://facebook.com/lantoniotrento
-  - title: google-plus
-    url: https://plus.google.com/+AntoniotrentoIt
-  #- title: github
-  #  url: http://github.com/jekyll
+    url: https://twitter.com/deepinfer
+  - title: github
+    url: http://github.com/deepinfer
 
 # Build settings
 markdown: kramdown
