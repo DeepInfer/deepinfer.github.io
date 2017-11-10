@@ -538,3 +538,5 @@ section.features .section-heading {
   .navbar-default .nav > li > a {
     font-weight: 400;
     font-size: 12px; } }
+p {
+  text-align: left; }
