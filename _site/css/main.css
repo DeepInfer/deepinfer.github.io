@@ -198,7 +198,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    min-height: 250px; }
+    min-height: 400px; }
     header .header-content {
       text-align: left;
       padding: 0;
@@ -206,7 +206,7 @@ header {
       header .header-content .header-content-inner {
         max-width: none;
         margin: 0;
-        position: absolute;
+        /*   position: absolute;*/
         top: 80%; }
         header .header-content .header-content-inner h1 {
           font-size: 35px; }
@@ -526,7 +526,9 @@ section.features .feature-item {
 
 @media (min-width: 992px) {
   header .header-content .header-content-inner h1 {
-    font-size: 50px; } }
+    font-size: 80px;
+    text-align: center;
+    margin-top: 80px; } }
 section {
   padding: 50px 0; }
 
@@ -534,9 +536,11 @@ section.features .section-heading {
   margin-bottom: 50px; }
 
 @media (min-width: 768px) {
-  /* .container { width: 100%; } */
   .navbar-default .nav > li > a {
     font-weight: 400;
     font-size: 12px; } }
 p {
   text-align: left; }
+
+.bg-gray {
+  background-color: #f7f7f7; }
