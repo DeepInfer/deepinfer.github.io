@@ -166,11 +166,11 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern2.png"), #43cea2;
+  background: url(""), #43cea2;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern2.png"), -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  background: url(""), -webkit-linear-gradient(to left, #43cea2, #185a9d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern2.png"), linear-gradient(to left, #43cea2, #185a9d);
+  background: url(""), linear-gradient(to left, #43cea2, #185a9d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff; }
   header .header-content {

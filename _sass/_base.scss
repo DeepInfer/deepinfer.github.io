@@ -211,11 +211,11 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern2.png"), $head-primary;
+  background: url(""), $head-primary;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern2.png"), -webkit-linear-gradient(to left, $head-primary, $head-secondary);
+  background: url(""), -webkit-linear-gradient(to left, $head-primary, $head-secondary);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern2.png"), linear-gradient(to left, $head-primary, $head-secondary);
+  background: url(""), linear-gradient(to left, $head-primary, $head-secondary);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff;
   .header-content {
