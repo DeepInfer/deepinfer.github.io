@@ -166,11 +166,11 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), #43cea2;
+  background: url("../img/bg-pattern2.png"), #43cea2;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, #43cea2, #185a9d);
+  background: url("../img/bg-pattern2.png"), -webkit-linear-gradient(to left, #43cea2, #185a9d);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #43cea2, #185a9d);
+  background: url("../img/bg-pattern2.png"), linear-gradient(to left, #43cea2, #185a9d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ffffff; }
   header .header-content {
@@ -530,10 +530,7 @@ section.features .feature-item {
     text-align: center;
     margin-top: 80px; } }
 section {
-  padding: 50px 0; }
-
-section.features .section-heading {
-  margin-bottom: 50px; }
+  padding: 15px 0; }
 
 @media (min-width: 768px) {
   .navbar-default .nav > li > a {
