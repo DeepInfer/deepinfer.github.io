@@ -1,9 +1,17 @@
 ---
 layout: default
 ---
-
-<!-- Post Header -->
-<header id="header" class="intro-header bg-primary text-center" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+<header style="min-height:80px;margin-top: 50px;text-align: left)">
+    <div class="container">
+        <div class="row" >
+            <div class="col-sm-12">
+                            <h1 class="text-center">{{page.title}}</h1>
+            </div>
+        </div>
+    </div>
+</header>
+<!--<header id="header" class="intro-header bg-primary text-center" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">&ndash;&gt;
+    <header id="header" class="intro-header bg-primary text-center" >
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -12,48 +20,37 @@ layout: default
                 {% if page.subtitle %}
                 <h2 class="subheading">{{ page.subtitle }}</h2>
                 {% endif %}
-                < p class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</p>
-                <a href="#post" class="page-scroll"><i class="fa fa-fw fa-2x fa-arrow-down"></i></a>
+                <p class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</p>
+                <a href="#post" class="page-scroll"><i class="fa fa-fw fa-2x fa-chevron-down"></i></a>
               </div>
             </div>
         </div>
+
+        <div class="row">
+            <h1>{{ page.author }}</h1>
+            <h1>{{ page.header-img }}</h1>
+            <img src="/img/demo-screen-1.png" alt="Mountain View" width="100%" >
+
+
+        </div>
     </div>
 </header>
-<hr>
+-->
+<br><br>
+
+<p class="meta text-center" style="color: darkgray">Published: {{ page.date | date: "%b. %-d, %Y" }}, author: {{page.author}}</p>
+
 <!-- Post Content -->
 <article>
     <div id="post" class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-		{% if site.data-ad-client %}  
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- jekynewage google ads -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9204963049240271"
-                    data-ad-slot="2973388149"
-                    data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-		{% endif %}
 		<hr>
 
 				{{ content }}
 
                 <hr>
 		    
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-                <!-- jekynewage google ads -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-9204963049240271"
-                    data-ad-slot="2973388149"
-                    data-ad-format="auto"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-
                 <ul class="pager">
                     {% if page.previous.url %}
                     <li class="previous">
