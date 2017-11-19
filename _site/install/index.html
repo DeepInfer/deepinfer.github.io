@@ -74,7 +74,7 @@
                     <a href="/models/">Models</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="/about/">About</a>
                 </li>
                 <li>
                     <a href="/blog/">Blog</a>
@@ -91,31 +91,112 @@
 
   <header style="min-height:80px;margin-top: 50px;text-align: left)">
     <div class="container">
-        <div class="row" >
+        <div class="row">
             <div class="col-sm-12">
-                            <h2>Install</h2>
+                <h2>Install and usage guide</h2>
             </div>
         </div>
     </div>
 </header>
 
-<section id="about" class="features">
-    <div class="container">
-        <div class="row">
-            <div class="container-fluid">
-                <h1>Installing DeepInfer</h1>
+<div class="container">
+    <div class="row">
+        <div class="container-fluid">
+
+            <br>
+            <div class="container row">
+                <p>The following guides explain how to install and use DeepInfer:</p>
+                <ul>
+                    <li><a href="#InstallDeepInfer">Installing DeepInfer</a></li>
+                    <li><a href="#UseDeepInfer">DeepInfer usage guide</a></li>
+                </ul>
             </div>
+
+            <div class="container row" id="InstallDeepInfer"><br><br><br>
+                <h1>Installing DeepInfer</h1>
+                <p>We have tested DeepInfer on the following 64-bit desktop and laptop operating systems:</p>
+                <ul>
+                    <li>Ubuntu 14.04 or later</li>
+                    <li>MacOS X 10.11 (El Capitan) or later.</li>
+                    <li>Windows 10 or later.</li>
+                </ul>
+                <p>DeepInfer installation requires installing Docker and 3D Slicer wich are explained in the
+                    following
+                    sections.</p>
+
+                <h3>1. Docker installation</h3>
+                <p>In order to use DeepInfer, <a href="https://www.docker.com/">Docker</a> is required to be
+                    installed
+                    and configured properly. Here are links for installing Docker CE (community edition) on
+                    supported
+                    operating systems:</p>
+                <ul>
+                    <li><a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/">Ubuntu</a>
+                    </li>
+                    <li><a href="https://docs.docker.com/docker-for-mac/install/">Mac OS X</a></li>
+                    <li><a href="https://docs.docker.com/docker-for-windows/install/">Windows</a></li>
+                </ul>
+                <p>Once you installed Docker you should validation your installation.</p>
+                <h3>2. Validating Docker Installation</h3>
+                <p>Start a terminal and run the following commands to make sure Docker is installed and configured
+                    properly:</p>
+                <h4>Test installation</h4>
+                <p>Type the following command in your shell:</p>
+                <pre>$ <b>docker -v</b></pre>
+                <p>If docker is installed correctly you will see a message like:</p>
+                <pre><b>Docker version 17.09.0-ce, build afdb6d4</b></pre>
+                <h4>Test pull and run</h4>
+                <p>First pull the hello-world docker:</p>
+                <pre>$ <b>docker pull hello-world</b></pre>
+                <p>After pulling is complete run the following command:</p>
+                <pre>$ <b>docker run hello-world</b></pre>
+                <p>You should see the following output:</p>
+                <pre><b>Hello from Docker!<br>This message shows that your installation appears to be working correctly.</b><br>...</pre>
+
+                <hr>
+                <h3>3. 3D Slicer installation</h3>
+                <p>DeepInfer can be used through 3D Slicer or independantly as a command-line user interface. Here
+                    we
+                    explain
+                    how to install and used it through 3D Slicer.</p>
+
+                <h3>4. Get the DeepInfer App</h3>
+
+                <p>You should now test your installation</a>.</p>
+
+                <h3>5. Test your installation</h3>
+                <h4>Command line</h4>
+                <p>Pull the deepinfer example docker (you need to have at least 4GB of free storage on your Docker
+                    drive):</p>
+                <pre>$ <b>docker pull deepinfer/example</b></pre>
+                <p>Once the pulling is finished run the following</p>
+
+                <h4>3D Slicer</h4>
+
+            </div>
+
+            <div class="container row" id="UseDeepInfer"><br><br><br>
+                <h1>DeepInfer usage guide</h1>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+                <p>Once you installed and tested DeepInfer you can download your required models from model registry and use them for inference.</p>
+            </div>
+
         </div>
     </div>
-</section>
+</div>
 
 
-  <!-- <footer>
+   <footer>
         <div class="container">
         <p>&copy; 2016-2017 DeepInfer Community.</p>
         </div>
 </footer>
- -->
+
   <!-- jQuery -->
 <script src="/js/jquery.js"></script>
 

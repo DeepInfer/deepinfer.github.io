@@ -525,7 +525,7 @@ section.features .feature-item {
   margin-bottom: 20px; }
 
 @media (min-width: 992px) {
-  header .header-content .header-content-inner h1 {
+  header .header-content .header-content-inner {
     font-size: 80px;
     text-align: center;
     margin-top: 80px; } }
@@ -580,3 +580,6 @@ p {
 
 .count-particles {
   border-radius: 0 0 3px 3px; }
+
+li {
+  font-size: 16px; }
