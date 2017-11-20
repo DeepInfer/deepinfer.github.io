@@ -1,0 +1,46 @@
+---
+layout: default
+---
+<header style="min-height:80px;margin-top: 50px;text-align: left)">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>{{page.model-name}}</h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<body id="page-top">
+{% include nav.html %}
+
+
+<section id="about" class="features">
+    <div class="container">
+        <div class="row">
+            <div class="container-fluid">
+             <a href="/pages/models/">Gob back to models</a>
+            <h3> Model parameters:</h3>
+            <ul>
+                <li>Description: {{page.description}}</li>
+                <li>Modality: {{page.modality}}</li>
+                <li>Organ: {{page.organ}}</li>
+                <li>Input: {{page.input}}</li>
+                <li>Size: {{page.size}}</li>
+                <li>maintainer: {{page.maintainer}}</li>
+                <li>email: {{page.email}}</li>
+                <li>Manuscript / documentation:</li>
+            </ul>
+
+
+            {{ content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--{% include footer.html %}-->
+{% include scripts.html %}
+</body>
+
+</html>

@@ -6,6 +6,8 @@ description: DeepInfer is an open-source toolkit for medical image analysis and 
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 url: "https://deepinfer.github.io" # the base hostname & protocol for your site
+include: ["pages","models"]
+permalink: /:title/
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 # data-ad-slot: 2973388149

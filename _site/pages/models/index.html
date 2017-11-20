@@ -65,16 +65,16 @@
                     <a href=/index/>Home</a>
                 </li>
                 <li>
-                    <a href="/install/">Install</a>
+                    <a href="/pages/install/">Install</a>
                 </li>
                 <li>
-                <a href="/contribute/">Contribute</a>
+                <a href="/pages/contribute/">Contribute</a>
                 </li>
                 <li>
-                    <a href="/models/">Models</a>
+                    <a href="/pages/models/">Models</a>
                 </li>
                 <li>
-                    <a href="/about/">About</a>
+                    <a href="/pages/about/">About</a>
                 </li>
                 <li>
                     <a href="/blog/">Blog</a>
@@ -91,31 +91,113 @@
 
   <header style="min-height:80px;margin-top: 50px;text-align: left">
     <div class="container">
-        <div class="row" >
+        <div class="row">
             <div class="col-sm-12">
-                            <h2>About</h2>
+                <h2>Models</h2>
             </div>
         </div>
     </div>
 </header>
-
+<body>
 <section id="about" class="features">
     <div class="container">
         <div class="row">
             <div class="container-fluid">
-                <h1>About DeepInfer</h1>
+                <p>Introduction about DeepInfer Model Registry, reproducible research, exposing and ... and a link to
+                    the contribution page</p>
+                <h1>Model collection</h1>
+                <p>The following talbe shows the list of available models in the current version of DeepInfer. For full
+                    model description click on the model name.</p>
+
+
+                Filter table: <input type="text" id="filterText" onkeyup="filterTable()" placeholder="">
+
+
+                <table class="table table-striped" id="modelTable">
+                    <thead>
+
+
+                    <tr>
+                        <th>Model Name</th>
+                        <th>Organ</th>
+                        <th>Task</th>
+                        <th>Modality</th>
+                        <th># of Train/Test</th>
+                        <th>Performance</th>
+                        <th>Description</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <tr>
+                                <td><a href="/models/prostate-segmenter/">Prostate-Segmenter</a></td>
+                                <td>Prostate</td>
+                                <td>Segmentation</td>
+                                <td>MRI</td>
+                                <td>60 / 30</td>
+                                <td>Dice: %85</td>
+                                <td>Whole-gland prostate segmentation in pelvic Axial T2-W MRI scans.</td>
+                            </tr>
+                        
+                    
+                        
+                    
+                    </tbody>
+
+                </table>
             </div>
         </div>
     </div>
 </section>
+<script>
+    function filterTable() {
+        var input, filter, table, tr, td, i, cleardisplay;
+        input = document.getElementById("filterText");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("modelTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 1; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td");
+            cleardisplay = true;
+            for (j = 1; j < td.length; j++) {
+                if (td[j]) {
+                    if (td[j].innerHTML.toUpperCase().indexOf(filter) !== -1) {
+                        cleardisplay = false;
+                    }
+                }
+            }
+            if (cleardisplay == true) {
+                tr[i].style.display = "none";
+            }
+            else {
+                tr[i].style.display = "";
+            }
+        }
+    }
+</script>
+</body>
 
-
-   <footer>
+  <!--<footer>
         <div class="container">
         <p>&copy; 2016-2017 DeepInfer Community.</p>
         </div>
 </footer>
-
+-->
   <!-- jQuery -->
 <script src="/js/jquery.js"></script>
 
