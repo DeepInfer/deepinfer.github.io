@@ -1,0 +1,46 @@
+---
+layout: install
+---
+<div class="container">
+    <div class="row">
+        <div class="container-fluid">
+            <br>
+            <a href="/pages/install/">&#8249; Go back to the installation page</a>
+            <h3>Docker installation</h3>
+            <p>In order to use DeepInfer, <a href="https://www.docker.com/">Docker</a> is required to be
+                installed
+                and configured properly. Here are links for installing Docker CE (community edition) on
+                supported
+                operating systems:</p>
+            <ul>
+                <li><a href="https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/">Ubuntu</a>
+                </li>
+                <li><a href="https://docs.docker.com/docker-for-mac/install/">Mac OS X</a></li>
+                <li><a href="https://docs.docker.com/docker-for-windows/install/">Windows</a></li>
+            </ul>
+            <p>Once you installed Docker you should validation your installation.</p>
+            <h3>2. Validating Docker Installation</h3>
+            <p>Start a terminal and run the following commands to make sure Docker is installed and configured
+                properly:</p>
+            <h4>Test installation</h4>
+            <p>Type the following command in your shell:</p>
+            <pre>$ <b>docker -v</b></pre>
+            <p>If docker is installed correctly you will see a message like:</p>
+            <pre><b>Docker version 17.09.0-ce, build afdb6d4</b></pre>
+            <h4>Test pull and run</h4>
+            <p>First pull the hello-world docker:</p>
+            <pre>$ <b>docker pull hello-world</b></pre>
+            <p>After pulling is complete run the following command:</p>
+            <pre>$ <b>docker run hello-world</b></pre>
+            <p>You should see the following output:</p>
+            <pre><b>Hello from Docker!<br>This message shows that your installation appears to be working correctly.</b><br>...</pre>
+            <ul class="pager">
+              <li class="next">
+                        <a href="/pages/install/slicer/" data-toggle="tooltip" data-placement="top" title="Install 3D Slicer">Install 3D Slicer&rarr;</a>
+              </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
