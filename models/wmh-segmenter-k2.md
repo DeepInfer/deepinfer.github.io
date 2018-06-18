@@ -2,7 +2,7 @@
 layout: model
 type: "model"
 model-name:  "WMH-Segmenter-K2"
-description: "K2 team solution for WMH segmentation grand challenge (http://wmh.isi.uu.nl/) at MICCAI 2017."
+description: "Team K2's solution for WMH segmentation grand challenge (http://wmh.isi.uu.nl/) at MICCAI 2017."
 modality: "MRI"
 organ: "Brain"
 task: "Lesion Segmentation"
