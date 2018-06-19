@@ -108,9 +108,12 @@
                 <li>MacOS X 10.11 (El Capitan) or later.</li>
                 <li>Windows 10 or later.</li>
             </ul>
-            <p>DeepInfer installation requires installing Docker and 3D Slicer wich are explained in the
-                following
-                sections:</p>
+            <p> The available machine learning models (check <a href="">model store</a>) can be used in command line mode or through the medical imaging software 3D Slicer.
+                3D Slicer provides a rich graphic user interface (GUI) for loading different types of medical imaging formats
+                such as DICOM, NIFTI, NRRD, and so on with several tools for annotating images, analysis tools and several processing modules.
+                <br><br>
+                If you want to use DeepInfer through 3D slicer follow steps 1 to 4. Otherwise, if you do not need the GUI and want to use the
+                models through command line, after installing Docker, jump to step 4.</p>
             <hr>
         </div>
 
@@ -122,9 +125,7 @@
             </div>
             <div class="col-lg-6">
                 <h3>1. Install docker.</h3>
-                <p>The first step is to make a docker image containing your deep model, model weights, and required
-                    libraries
-                    and share it on DockerHub.</p>
+                <p>DeepInfer models are Docker images. Docker installation is required to run the models.</p>
                 <a href="/pages/install/docker/">Docker Installation Guide &#8250;</a>
 
             </div>
@@ -137,9 +138,10 @@
                 <img src="/img/slicer.png" class="img-rounded" height="130">
             </div>
             <div class="col-lg-6">
-                <h3>2. Install 3D Slicer.</h3>
-                <p>DeepInfer supports a standard JSON descriptor fomrat which descibes model attributes,
-                    inputs, and outputs. </p>
+                <h3>2. Install 3D Slicer (optional*).</h3>
+                <p>
+                    3D Slicer must be installed in order to use DeepInfer with Slicer.
+                </p>
                 <a href="/pages/install/slicer/">3D Slicer Installation Guide &#8250;</a>
 
             </div>
@@ -154,7 +156,7 @@
                 <img src="/img/deepinferlogo.png" class="img-rounded" height="100">
             </div>
             <div class="col-lg-6">
-                <h3>3. Get the DeepInfer app.</h3>
+                <h3>3. Get the DeepInfer app (optional*).</h3>
                 <p>DeepInfer supports a standard JSON descriptor fomrat which descibes model attributes,
                     inputs, and outputs. </p>
                 <a href="/pages/install/deepinfer_app">Get DeepInfer App &#8250;</a>
@@ -183,6 +185,7 @@
                     href="https://goo.gl/forms/qNarFutbocxZLkpr1">this form</a> and we
                 will reach out to you soon.</p>
         </div>
+        <p class="small">* steps 2 and 3 are required only for using DeepInfer through the 3D Slicer.</p>
     </div>
 </div>
 
@@ -196,7 +199,7 @@
             <a href="http://rcl.ece.ubc.ca/" style="color: grey">Robotics and Control Laboratory</a> at University of British
             Columbia.</p>
         <br>
-        <p>&copy; 2016-2017 DeepInfer Community.</p>
+        <p>&copy; 2016-2018 DeepInfer Community.</p>
     </div>
 </footer>
 

@@ -104,24 +104,64 @@
             <br>
             <a href="/pages/install/">&#8249; Go back to the installation page</a>
             <h3>Get the DeepInfer app</h3>
-            <p>Blah blah.</p>
-
+            <ol>
+                <li>
+                    <p>Open 3D Slicer. Once it is launched click on the "Extensions Manager" button.</p>
+                    <br>
+                    <img src="/img/install/app/1.png" class="img-responsive" alt="extensions manager">
+                </li>
+                <br>
+                <br>
+                <li>
+                    <p>Once the Extension Manager pops up, make sure that the "Install Extensions" tab is selected.
+                        Click on the search box on the top right and type DeepInfer.</p>
+                    <img src="/img/install/app/2.png" class="img-responsive" alt="extensions manager">
+                </li>
+                <br>
+                <br>
+                <li>
+                    <p>Click on the install button and wait until it installation is done. Then press the
+                        restart button.</p>
+                    <img src="/img/install/app/3.png" class="img-responsive" alt="extensions manager">
+                </li>
+            </ol>
             <h3>Validate your installation</h3>
-            <h4>Command line</h4>
-            <p>Pull the deepinfer example docker (you need to have at least 4GB of free storage on your Docker
-                drive):</p>
-            <pre>$ <b>docker pull deepinfer/example</b></pre>
-            <p>Once the pulling is finished run the following</p>
+            <p>Once you installed DeepInfer, follow the steps below to make sure that the DeepInfer is installed correctly
+                and can communicate with the Docker application.</p>
+            <ol>
+                <li>
+                    <p>Go to the modules menu and choose Machine Learning > DeepInfer module.</p>
+                    <br>
+                    <img src="/img/install/app/4.png" class="img-responsive" alt="extensions manager">
+                </li>
+                <br>
+                <br>
+                <li>
+                    <p>In the DeepInfer module user interface, find the docker settings tab, press the test
+                        button to test docker configuration.</p>
+                    <img src="/img/install/app/5.png" class="img-responsive" alt="extensions manager">
+                    <br>
+                    <p>If the Docker is installed and configured correctly on your system you will get the following
+                        popup widow with information about the version of Docker. Otherwise, if you are getting a
+                        warning for docker configuration check your <a href="/pages/install/docker.html">Docker
+                            installation and configuration</a>.</p>
 
+                    <img src="/img/install/app/6.png" class="img-responsive" alt="extensions manager">
+                </li>
+                <br>
+                <br>
+            </ol>
             <ul class="pager">
                 <ul class="pager">
-              <li class="previous">
-                        <a href="/pages/install/slicer/" data-toggle="tooltip" data-placement="top" title="Install 3D Slicer">&larr; Install 3D Slicer</a>
-              </li>
-              <li class="next">
-                        <a href="/pages/install/usage_guide/" data-toggle="tooltip" data-placement="top" title="Install 3D Slicer">DeepInfer usage guide &rarr;</a>
-              </li>
-            </ul>
+                    <li class="previous">
+                        <a href="/pages/install/slicer/" data-toggle="tooltip" data-placement="top"
+                           title="Install 3D Slicer">&larr; Install 3D Slicer</a>
+                    </li>
+                    <li class="next">
+                        <a href="/pages/install/usage_guide/" data-toggle="tooltip" data-placement="top"
+                           title="Install 3D Slicer">DeepInfer usage guide &rarr;</a>
+                    </li>
+                </ul>
             </ul>
         </div>
     </div>
@@ -138,7 +178,7 @@
             <a href="http://rcl.ece.ubc.ca/" style="color: grey">Robotics and Control Laboratory</a> at University of British
             Columbia.</p>
         <br>
-        <p>&copy; 2016-2017 DeepInfer Community.</p>
+        <p>&copy; 2016-2018 DeepInfer Community.</p>
     </div>
 </footer>
 
