@@ -18,7 +18,7 @@ email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
 
-### Slicer User interface guide
+### Slicer module guide
 
 ### Command-line interface guide
 

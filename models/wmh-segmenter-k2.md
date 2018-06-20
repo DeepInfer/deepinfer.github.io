@@ -17,11 +17,11 @@ maintainer: "Alireza Mehrtash"
 email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
-### Slicer User interface guide
+### Slicer module guide
 
-### Command-line interface guide
+### Command-line guide
 
-### Related blog posts
+<!--### Related blog posts-->
 
 ### Reuse and Citations
 The {{page.model-name}} model is licensed under [{{page.license_type}}]({{page.license_url}}).<br>
