@@ -89,7 +89,7 @@
     <!-- /.container-fluid -->
 </nav>
 
-<header style="min-height:80px;margin-top: 50px;text-align: left)">
+<header style="min-height:80px;margin-top: 50px;text-align: left;)">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
@@ -100,24 +100,105 @@
 </header>
 <div class="container">
     <div class="row">
-        <div class="container-fluid">
-            <br>
+        <div class="container">
+            <br><br>
             <a href="/pages/install/">&#8249; Go back to the installation page</a>
-            <h3>DeepInfer usage guide</h3>
-            <p>Once you installed and tested DeepInfer you can download your required models from model registry and use
-                them for inference kadfjkad.</p>
-            <h3>DeepInfer 3D-Slicer</h4>
-            <p>blah blah</p>
+            <h2>DeepInfer usage guide</h2>
+            <p>DeepInfer can be used in command-line mode or through 3D Slicer. In the following
+                sections we describe both methods:</p>
+            <ul>
+                <li><a href="#slicer">DeepInfer 3D Slicer</a></li>
+                <li><a href="#commandline">DeepInfer command-line</a></li>
+            </ul>
+            <section id="slicer">
+                <h3>DeepInfer 3D-Slicer</h3>
+                <p>Make sure that you have installed both 3D Slicer and DeepInfer module and have
+                    <a href="/pages/install/deepinfer_app/">validated your installation</a>. Follow the steps bellow
+                    to connect a model from <a href="http://localhost:4000/pages/models/"> DeepInfer model store</a>
+                    and run it on your machine:</p>
+                <ol>
+                    <li>
+                        <p>Open DeepInfer module: Go to the modules menu and choose Machine Learning > DeepInfer
+                            module.</p>
+                        <br>
+                        <img src="/img/install/usage_guide/1.png" class="img-responsive" alt="DeepInfer Module">
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <p>Connect to the DeepInfer Model Store: make sure that your computer is connected to the
+                        internet. Press the connect button under the Cloud Model Repository tab. It will connect
+                        to DeepInfer model store and creates a list of available models.</p>
+                        <br>
+                        <img src="/img/install/usage_guide/2.png" class="img-responsive" alt="connect to model store">
+                    </li>
+                    <li>
+                        <p>Select and download your selected model(s): from the populated table select a model
+                        and press the download button. This will prompt a popup window reporting the size of the
+                        docker image. If you confirm yes it will start downloading the model.
+                        <br>
+                        (<span class="label label-danger">Important Note</span> Depending on your internet speed and
+                            model size, it might take several minutes to hours to download a docker image.
+                        Since Slicer application in single threaded and event driver, the application might
+                        go irresponsive. Please be patient until the progress bar reaches 100%. The download information
+                        is available in python interpreter. To check that you must open the Slicer python interpreter
+                        before pressing the download button.)</p>
+                        <br>
+                        <img src="/img/install/usage_guide/3.png" class="img-responsive" alt="download model">
+                    </li>
+                    <br>
+                    <br>
+                    <li>
+                        <p>Set input(s) and output(s) and run the inference: Load the input images and set the
+                            input nodes with appropriate inputs. For output nodes make sure to create new nodes.
+                        Once you create all nodes press the "Apply" button. A progress bar will appear wait until the
+                        process is finished and progress reaches to 100%.</p>
+                        <img src="/img/install/usage_guide/4.png" class="img-responsive" alt="inference">
+                        <br>
+                        <p><span class="label label-warning">Resetting the module</span> If for any reason the inference
+                            procedure breaks, reset the module to its initial condition by pressing the reload button under
+                            "Reload & Test".</p>
+                    </li>
+                </ol>
+            </section>
+            <section id="commandline">
+                <h3>DeepInfer Command-line</h3>
 
-            <h3>DeepInfer Command line</h4>
-            <p>blah blah</p>
-
+                <p>DeepInfer models can be run outside of 3D slicer in the command-line mode. To run the model in
+                    command-line,
+                    check the specific documentation page of the model from the model store for instructions.<br>
+                    Here is an example of downloading and running the prostate-segmenter model in command line mode:
+                    <ol>
+                        <li>
+                <p>Download the docker image</p>
+                <pre><code>docker pull deepinfer/deepinfer-prostate</code></pre>
+                </li>
+                <br>
+                <li>
+                    <p>Run the docker: By running the following code we first map a folder in the file system to the data
+                    folder inside the docker, and the giving the input volume name, output prediction label
+                    path and other model parameters. After running the following command the predicted
+                    result will be generated inside the mapped folder.</p>
+                    <pre><code>docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
+                   --ModelName prostate-segmenter\
+                   --Domain BWH_WITHOUT_ERC\
+                   --InputVolume prostate.nrrd \
+                   --OutputLabel output_prostate_label.nrrd \
+                   --ProcessingType Accurate\
+                   --Inference Ensemble\
+                   --verbose</code></pre>
+                </li>
+                </ol>
+                <br>
+                <p>For other <a href="/pages/models/">models</a> check the "Command-line interface guide section" in their model page.</p>
+            </section>
             <ul class="pager">
                 <ul class="pager">
-              <li class="previous">
-                        <a href="/pages/install/deepinfer_app/" data-toggle="tooltip" data-placement="top" title="Get the DeepInfer app">&larr; Get the DeepInfer app</a>
-              </li>
-            </ul>
+                    <li class="previous">
+                        <a href="/pages/install/deepinfer_app/" data-toggle="tooltip" data-placement="top"
+                           title="Get the DeepInfer app">&larr; Get the DeepInfer app</a>
+                    </li>
+                </ul>
             </ul>
         </div>
     </div>
