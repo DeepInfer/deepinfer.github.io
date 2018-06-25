@@ -5,7 +5,7 @@ model-name:  "Prostate-Needle-Finder"
 description: "Biopsy needle trajectory and tip detection in intraoperative MRIs."
 modality: "MRI"
 organ: "Prostate"
-task: "Localization"
+task: "Localization, Segmentation"
 train_no: "50 patients (410 MRIs)"
 test_no: "21 patients (173 MRIs)"
 license_type: "Slicer License"
@@ -31,7 +31,29 @@ src="https://www.youtube.com/embed/7k_SLtmM2Kw?rel=0&amp;showinfo=0" frameborder
 
 
 ### Command-line interface guide
+#### Download Docker Image
+```
+docker pull deepinfer/deepinfer-prostate
+```
+#### Run Example 
+```
+docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
+                   --ModelName prostate-segmenter\
+                   --Domain BWH_WITHOUT_ERC\
+                   --InputVolume prostate.nrrd \
+                   --OutputLabel output_prostate_label.nrrd \
+                   --ProcessingType Accurate\
+                   --Inference Ensemble\
+                   --verbose
+```
+#### Inputs
+```
+[Mandatory]
+ModelName: ('prostate-needle-finder')
+InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
 
+[Optional]
+```
 <!-- ### Related blog posts -->
 
 ### Reuse and Citations

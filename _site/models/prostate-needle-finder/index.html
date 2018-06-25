@@ -178,7 +178,26 @@
 <h3 id="slicer-module-guide">Slicer module guide</h3>
 
 <h3 id="command-line-interface-guide">Command-line interface guide</h3>
+<h4 id="download-docker-image">Download Docker Image</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull deepinfer/deepinfer-prostate
+</code></pre></div></div>
+<h4 id="run-example">Run Example</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
+                   --ModelName prostate-segmenter\
+                   --Domain BWH_WITHOUT_ERC\
+                   --InputVolume prostate.nrrd \
+                   --OutputLabel output_prostate_label.nrrd \
+                   --ProcessingType Accurate\
+                   --Inference Ensemble\
+                   --verbose
+</code></pre></div></div>
+<h4 id="inputs">Inputs</h4>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Mandatory]
+ModelName: ('prostate-needle-finder')
+InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
 
+[Optional]
+</code></pre></div></div>
 <!-- ### Related blog posts -->
 
 <h3 id="reuse-and-citations">Reuse and Citations</h3>
