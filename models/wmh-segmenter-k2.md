@@ -21,8 +21,7 @@ header-img: "img/demo-screen-1.png"
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
-<iframe class="embed-responsive-item"
-src="https://www.youtube.com/embed/7k_SLtmM2Kw?rel=0&amp;showinfo=0" frameborder="1" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/nOlTVD0Gigk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 </div>
 </div>
