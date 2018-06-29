@@ -18,7 +18,7 @@ email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
 
-### Slicer module demo 
+### Slicer module guide & demo 
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
