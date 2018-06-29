@@ -181,18 +181,20 @@
 </div>
 
 <h3 id="command-line-guide">Command-line guide</h3>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull deepinfer//wmh-segmenter-k2
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>docker pull deepinfer/wmh-segmenter-k2
+</code></pre>
+</div>
 <h4 id="example">Example</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -t -v ~/data/wmh_test/:/data deepinfer/whm-segmenter-k2\
+<div class="highlighter-rouge"><pre class="highlight"><code>docker run -t -v ~/data/wmh_test/:/data deepinfer/whm-segmenter-k2\
                    --ModelName wmh_segmenter\
                    --InputT1Volume /data/T1.nrrd\
                    --InputFLAIRVolume /data/flair.nrrd\
                    --OutputLabel /data/wmh_label.nrrd \
                    --verbose
-</code></pre></div></div>
+</code></pre>
+</div>
 <h4 id="inputs">Inputs</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Mandatory]
+<div class="highlighter-rouge"><pre class="highlight"><code>[Mandatory]
 ModelName: ('wmh_segmenter')
 InputT1Volume: (an existing filename locating the T1-Weighted MRI of the brain)
 InputFLAIRVolume: (an existing filename locating the FLAIR MRI of the brain)
@@ -201,7 +203,8 @@ OutputLabel: (output path of the white matter hyperintensity (WMH) label)
 [Optional]
 verbose : 
 verbose mode for printing additional details about the procedure.
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <!--### Related blog posts-->
 
@@ -209,12 +212,14 @@ verbose mode for printing additional details about the procedure.
 <p>The WMH-Segmenter-K2 model is licensed under <a href="https://github.com/Slicer/Slicer/blob/master/License.txt">Slicer License</a>.<br />
 For attribution in academic contexts, please cite the following work(s):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article under review.
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Article under review.
+</code></pre>
+</div>
 <p>BibTeX citation</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article under review.
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Article under review.
+</code></pre>
+</div>
 
             </div>
         </div>

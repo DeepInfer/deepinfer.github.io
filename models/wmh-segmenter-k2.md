@@ -28,7 +28,7 @@ header-img: "img/demo-screen-1.png"
 
 ### Command-line guide
 ```
-docker pull deepinfer//wmh-segmenter-k2
+docker pull deepinfer/wmh-segmenter-k2
 ```
 #### Example
 ```

@@ -182,10 +182,11 @@
 
 <h3 id="command-line-interface-guide">Command-line interface guide</h3>
 <h4 id="download-docker-image">Download Docker Image</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull deepinfer/deepinfer-prostate
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>docker pull deepinfer/deepinfer-prostate
+</code></pre>
+</div>
 <h4 id="example">Example</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -t -v ~/data/needle_test/:/data deepinfer/prostate\
+<div class="highlighter-rouge"><pre class="highlight"><code>docker run -t -v ~/data/needle_test/:/data deepinfer/prostate\
                    --ModelName prostate-needle-finder\
                    --InputVolume /data/confirmation_volume.nrrd\
                    --InputProstateMask /data/prostate_label.nrrd\
@@ -193,9 +194,10 @@
                    --OutputFiducialList /data/Tip.fcsv\
                    --InferenceType Single\
                    --verbose
-</code></pre></div></div>
+</code></pre>
+</div>
 <h4 id="inputs">Inputs</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Mandatory]
+<div class="highlighter-rouge"><pre class="highlight"><code>[Mandatory]
 ModelName: ('prostate-needle-finder')
 InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
 InputProstateMask: (an existing filename locating the rough prostate gland location)
@@ -209,18 +211,20 @@ Inference: (Single, Ensemble)
 [Optional]
 verbose : 
 verbose mode for printing additional details about the procedure.
-</code></pre></div></div>
+</code></pre>
+</div>
 <!-- ### Related blog posts -->
 
 <h3 id="reuse-and-citations">Reuse and Citations</h3>
 <p>The Prostate-Needle-Finder model is licensed under <a href="https://github.com/Slicer/Slicer/blob/master/License.txt">Slicer License</a>.<br />
 For attribution in academic contexts, please cite the following work(s):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Article under review.
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Article under review.
+</code></pre>
+</div>
 <p>BibTeX citation</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{,
+<div class="highlighter-rouge"><pre class="highlight"><code>@inproceedings{,
   title={},
   author={},
   booktitle={},
@@ -228,7 +232,8 @@ For attribution in academic contexts, please cite the following work(s):</p>
   year={},
   organization={}
 }
-</code></pre></div></div>
+</code></pre>
+</div>
 
             </div>
         </div>

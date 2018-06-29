@@ -134,15 +134,18 @@
                     </li>
                     <li>
                         <p>Select and download your selected model(s): from the populated table select a model
-                        and press the download button. This will prompt a popup window reporting the size of the
-                        docker image. If you confirm yes it will start downloading the model.
-                        <br>
+                        and press the download button. This will prompt a popup window with a terminal command
+                            to download (pull) the docker image.
+                            Copy and paste the command in a terminal and wait until the download is finished.
+                            Once the download is finished, restart Slicer and you should see the model in the
+                            local models section.
+                        <!--br>
                         (<span class="label label-danger">Important Note</span> Depending on your internet speed and
                             model size, it might take several minutes to hours to download a docker image.
                         Since Slicer application in single threaded and event driver, the application might
                         go irresponsive. Please be patient until the progress bar reaches 100%. The download information
                         is available in python interpreter. To check that you must open the Slicer python interpreter
-                        before pressing the download button.)</p>
+                        before pressing the download button.)</p-->
                         <br>
                         <img src="/img/install/usage_guide/3.png" class="img-responsive" alt="download model">
                     </li>
@@ -182,9 +185,9 @@
                     <pre><code>docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
                    --ModelName prostate-segmenter\
                    --Domain BWH_WITHOUT_ERC\
-                   --InputVolume prostate.nrrd \
-                   --OutputLabel output_prostate_label.nrrd \
-                   --ProcessingType Accurate\
+                   --InputVolume /data/prostate.nrrd \
+                   --OutputLabel /data/output_prostate_label.nrrd \
+                   --ProcessingType Fast\
                    --Inference Ensemble\
                    --verbose</code></pre>
                 </li>

@@ -182,10 +182,11 @@
 
 <h3 id="command-line-guide">Command-line guide</h3>
 <h4 id="download-docker-image">Download Docker Image</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker pull deepinfer/deepinfer-prostate
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>docker pull deepinfer/deepinfer-prostate
+</code></pre>
+</div>
 <h4 id="example">Example</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
+<div class="highlighter-rouge"><pre class="highlight"><code>docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
                    --ModelName prostate-segmenter\
                    --Domain BWH_WITHOUT_ERC\
                    --InputVolume /data/prostate.nrrd \
@@ -193,9 +194,10 @@
                    --ProcessingType Accurate\
                    --Inference Ensemble\
                    --verbose
-</code></pre></div></div>
+</code></pre>
+</div>
 <h4 id="inputs">Inputs</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Mandatory]
+<div class="highlighter-rouge"><pre class="highlight"><code>[Mandatory]
 ModelName: (prostate-segmenter)
 Domain: (BWH_WITH_ERC, BWH_WITHOUT_ERC, PROMISE12)
     Select the domain of trained models: 3 different domains are available:
@@ -216,7 +218,8 @@ Inference: (Single, Ensemble)
 [Optional]
 verbose : 
     verbose mode for printing additional details about the procedure.
-</code></pre></div></div>
+</code></pre>
+</div>
 
 <!--### Related blog posts
 
@@ -226,11 +229,12 @@ verbose :
 <p>The Prostate-Segmenter model is licensed under <a href="https://github.com/Slicer/Slicer/blob/master/License.txt">Slicer License</a>.<br />
 For attribution in academic contexts, please cite the following work(s):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mehrtash A. et al. "DeepInfer: open-source deep learning deployment toolkit for image-guided therapy." SPIE 2017.
-</code></pre></div></div>
+<div class="highlighter-rouge"><pre class="highlight"><code>Mehrtash A. et al. "DeepInfer: open-source deep learning deployment toolkit for image-guided therapy." SPIE 2017.
+</code></pre>
+</div>
 <p>BibTeX citation</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@inproceedings{mehrtash2017deepinfer,
+<div class="highlighter-rouge"><pre class="highlight"><code>@inproceedings{mehrtash2017deepinfer,
   title={DeepInfer: Open-Source Deep Learning Deployment Toolkit for Image-Guided Therapy},
   author={Mehrtash, Alireza and Pesteie, Mehran and Hetherington, Jorden and Behringer, Peter A and Kapur, Tina and Wells III, William M and Rohling, Robert and Fedorov, Andriy and Abolmaesumi, Purang},
   booktitle={Proceedings of SPIE--the International Society for Optical Engineering},
@@ -238,7 +242,8 @@ For attribution in academic contexts, please cite the following work(s):</p>
   year={2017},
   organization={NIH Public Access}
 }
-</code></pre></div></div>
+</code></pre>
+</div>
 
             </div>
         </div>
