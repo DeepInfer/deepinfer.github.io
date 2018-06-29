@@ -17,7 +17,7 @@ maintainer:     "Alireza Mehrtash"
 email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
-### Demo
+### Slicer module demo
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
@@ -26,23 +26,21 @@ header-img: "img/demo-screen-1.png"
 </div>
 </div>
 
-### Slicer module guide
-
 
 ### Command-line interface guide
 #### Download Docker Image
 ```
 docker pull deepinfer/deepinfer-prostate
 ```
-#### Run Example 
+#### Example
 ```
-docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
-                   --ModelName prostate-segmenter\
-                   --Domain BWH_WITHOUT_ERC\
-                   --InputVolume prostate.nrrd \
-                   --OutputLabel output_prostate_label.nrrd \
-                   --ProcessingType Accurate\
-                   --Inference Ensemble\
+docker run -t -v ~/data/needle_test/:/data deepinfer/prostate\
+                   --ModelName prostate-needle-finder\
+                   --InputVolume /data/confirmation_volume.nrrd\
+                   --InputProstateMask /data/prostate_label.nrrd\
+                   --OutputLabel /data/needle_label.nrrd \
+                   --OutputFiducialList /data/Tip.fcsv\
+                   --InferenceType Single\
                    --verbose
 ```
 #### Inputs
@@ -50,8 +48,17 @@ docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
 [Mandatory]
 ModelName: ('prostate-needle-finder')
 InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
+InputProstateMask: (an existing filename locating the rough prostate gland location)
+OutputLabel: (output path of the needle label)
+OutputFiducialList: (output path of the fiducial list in fcsv format (slicer fiducial list format) where the needle
+tip will be saved)
+Inference: (Single, Ensemble)
+    Single: the prediction would be the output of a single model. Ensemble: the prediction will be the 
+    calculated by ensembling of 5 models from 5-fold cross validation and majority voting.
 
 [Optional]
+verbose : 
+verbose mode for printing additional details about the procedure.
 ```
 <!-- ### Related blog posts -->
 

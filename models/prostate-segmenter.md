@@ -18,7 +18,7 @@ email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
 
-### Demo
+### Slicer module demo 
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
@@ -27,9 +27,47 @@ header-img: "img/demo-screen-1.png"
 </div>
 </div>
 
-### Slicer module guide
 
 ### Command-line guide
+#### Download Docker Image
+```
+docker pull deepinfer/deepinfer-prostate
+```
+#### Example
+```
+docker run -t -v ~/data/prostate_test/:/data deepinfer/prostate\
+                   --ModelName prostate-segmenter\
+                   --Domain BWH_WITHOUT_ERC\
+                   --InputVolume /data/prostate.nrrd \
+                   --OutputLabel /data/output_prostate_label.nrrd \
+                   --ProcessingType Accurate\
+                   --Inference Ensemble\
+                   --verbose
+```
+#### Inputs
+```
+[Mandatory]
+ModelName: (prostate-segmenter)
+Domain: (BWH_WITH_ERC, BWH_WITHOUT_ERC, PROMISE12)
+    Select the domain of trained models: 3 different domains are available:
+    - BWH_WITH_ERC is a domain trained on pre-operative T2-Weighted images of Brigham and Women's Hosptial
+    with endorctal coil on 3T MRI machine.
+    - BWH_WITHOUT_ERC is a domain trained on pre-operative T2-Weighted images of Brigham and Women's Hosptial
+    with endorctal coil on 3T MRI machine.
+    - PROMISE12 are models that are trained on PROMISE12 challenge training dataset (multi-center multi-vendor dataset) 
+    (https://promise12.grand-challenge.org/)
+InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
+OutputLabel: (output path of the prostate gland label)
+ProcessingType: (Fast, Accurate)
+    Accurate models use higher resolution inputs (0.27-0.625 mm in-plane resolutions) while fast models use
+    1 mm in-plane resolutions.
+Inference: (Single, Ensemble)
+    Single: the prediction would be the output of a single model. Ensemble: the prediction will be the 
+    calculated by ensembling of 5 models from 5-fold cross validation and majority voting.
+[Optional]
+verbose : 
+    verbose mode for printing additional details about the procedure.
+```
 
 <!--### Related blog posts
 

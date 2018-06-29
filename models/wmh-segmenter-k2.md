@@ -17,7 +17,7 @@ maintainer: "Alireza Mehrtash"
 email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
-### Demo
+### Slicer module demo
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
@@ -26,9 +26,31 @@ header-img: "img/demo-screen-1.png"
 </div>
 </div>
 
-### Slicer module guide
-
 ### Command-line guide
+```
+docker pull deepinfer//wmh-segmenter-k2
+```
+#### Example
+```
+docker run -t -v ~/data/wmh_test/:/data deepinfer/whm-segmenter-k2\
+                   --ModelName wmh_segmenter\
+                   --InputT1Volume /data/T1.nrrd\
+                   --InputFLAIRVolume /data/flair.nrrd\
+                   --OutputLabel /data/wmh_label.nrrd \
+                   --verbose
+```
+#### Inputs
+```
+[Mandatory]
+ModelName: ('wmh_segmenter')
+InputT1Volume: (an existing filename locating the T1-Weighted MRI of the brain)
+InputFLAIRVolume: (an existing filename locating the FLAIR MRI of the brain)
+OutputLabel: (output path of the white matter hyperintensity (WMH) label)
+
+[Optional]
+verbose : 
+verbose mode for printing additional details about the procedure.
+```
 
 <!--### Related blog posts-->
 
@@ -37,10 +59,10 @@ The {{page.model-name}} model is licensed under [{{page.license_type}}]({{page.l
 For attribution in academic contexts, please cite the following work(s):
 
 ```
-TBD
+Article under review.
 ```
 BibTeX citation
 
 ```
-TBD
+Article under review.
 ```
