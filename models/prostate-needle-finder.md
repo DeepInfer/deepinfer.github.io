@@ -47,7 +47,7 @@ docker run -t -v ~/data/needle_test/:/data deepinfer/prostate\
 ```
 [Mandatory]
 ModelName: ('prostate-needle-finder')
-InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing MRI)
+InputVolume: (an existing filename locating the T2-Weighted Pelvic MRI containing Needle)
 InputProstateMask: (an existing filename locating the rough prostate gland location)
 OutputLabel: (output path of the needle label)
 OutputFiducialList: (output path of the fiducial list in fcsv format (slicer fiducial list format) where the needle
