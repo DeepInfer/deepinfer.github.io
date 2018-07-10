@@ -17,6 +17,31 @@ maintainer:     "Alireza Mehrtash"
 email:     "mehrtash at bwh.harvard.edu"
 header-img: "img/demo-screen-1.png"
 ---
+
+
+### Scientific Publication
+Details for {{page.model-name}} model are provided in the following scientific publication:
+```
+Article under review.
+```
+BibTeX citation
+
+```
+@inproceedings{,
+  title={},
+  author={},
+  booktitle={},
+  volume={},
+  year={},
+  organization={}
+}
+```
+
+### License
+{{page.model-name}} model is licensed under [{{page.license_type}}]({{page.license_url}}).<br>
+
+<!--For attribution in academic contexts, please cite the following work(s):-->
+
 ### Slicer module guide & demo
 <div class="row">
 <div class="col-md-6">
@@ -62,22 +87,3 @@ verbose mode for printing additional details about the procedure.
 ```
 <!-- ### Related blog posts -->
 
-### Reuse and Citations
-The {{page.model-name}} model is licensed under [{{page.license_type}}]({{page.license_url}}).<br>
-For attribution in academic contexts, please cite the following work(s):
-
-```
-Article under review.
-```
-BibTeX citation
-
-```
-@inproceedings{,
-  title={},
-  author={},
-  booktitle={},
-  volume={},
-  year={},
-  organization={}
-}
-```
