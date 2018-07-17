@@ -42,7 +42,7 @@ BibTeX citation
 
 <!--For attribution in academic contexts, please cite the following work(s):-->
 
-### Slicer module guide & demo
+### Demo
 <div class="row">
 <div class="col-md-6">
 <div class="embed-responsive embed-responsive-16by9">
