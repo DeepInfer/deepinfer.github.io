@@ -55,7 +55,7 @@ BibTeX citation
 ### Command-line interface guide
 #### Download Docker Image
 ```
-docker pull deepinfer/deepinfer-prostate
+docker pull deepinfer/prostate
 ```
 #### Example
 ```

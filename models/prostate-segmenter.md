@@ -31,7 +31,7 @@ header-img: "img/demo-screen-1.png"
 ### Command-line guide
 #### Download Docker Image
 ```
-docker pull deepinfer/deepinfer-prostate
+docker pull deepinfer/prostate
 ```
 #### Example
 ```
