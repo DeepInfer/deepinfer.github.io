@@ -60,8 +60,7 @@ The {{page.model-name}} model is licensed under [{{page.license_type}}]({{page.l
 For attribution in academic contexts, please cite the following work(s):
 
 ```
-Kuijf, Hugo J., et al. "Standardized assessment of automatic segmentation of white matter 
-hyperintensities and results of the WMH segmentation challenge." 
+Kuijf, Hugo J., et al. "Standardized assessment of automatic segmentation of white matter hyperintensities and results of the WMH segmentation challenge." 
 IEEE transactions on medical imaging 38.11 (2019): 2556-2568.
 ```
 BibTeX citation

@@ -23,8 +23,7 @@ header-img: "img/demo-screen-1.png"
 ### Scientific Publication
 Details for {{page.model-name}} model are provided in the following scientific publication:
 ```
-Mehrtash, Alireza, et al. "Automatic needle segmentation and localization in MRI with 3-D 
-convolutional neural networks: application to MRI-targeted prostate biopsy." 
+Mehrtash, Alireza, et al. "Automatic needle segmentation and localization in MRI with 3-D convolutional neural networks: application to MRI-targeted prostate biopsy." 
 IEEE transactions on medical imaging 38.4 (2018): 1026-1036.
 ```
 BibTeX citation
