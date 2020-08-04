@@ -60,10 +60,21 @@ The {{page.model-name}} model is licensed under [{{page.license_type}}]({{page.l
 For attribution in academic contexts, please cite the following work(s):
 
 ```
-Article under review.
+Kuijf, Hugo J., et al. "Standardized assessment of automatic segmentation of white matter 
+hyperintensities and results of the WMH segmentation challenge." 
+IEEE transactions on medical imaging 38.11 (2019): 2556-2568.
 ```
 BibTeX citation
 
 ```
-Article under review.
+@article{kuijf2019standardized,
+  title={Standardized assessment of automatic segmentation of white matter hyperintensities and results of the WMH segmentation challenge},
+  author={Kuijf, Hugo J and Biesbroek, J Matthijs and De Bresser, Jeroen and Heinen, Rutger and Andermatt, Simon and Bento, Mariana and Berseth, Matt and Belyaev, Mikhail and Cardoso, M Jorge and Casamitjana, Adria and others},
+  journal={IEEE transactions on medical imaging},
+  volume={38},
+  number={11},
+  pages={2556--2568},
+  year={2019},
+  publisher={IEEE}
+}
 ```

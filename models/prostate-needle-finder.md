@@ -23,18 +23,22 @@ header-img: "img/demo-screen-1.png"
 ### Scientific Publication
 Details for {{page.model-name}} model are provided in the following scientific publication:
 ```
-Article under review.
+Mehrtash, Alireza, et al. "Automatic needle segmentation and localization in MRI with 3-D 
+convolutional neural networks: application to MRI-targeted prostate biopsy." 
+IEEE transactions on medical imaging 38.4 (2018): 1026-1036.
 ```
 BibTeX citation
 
 ```
-@inproceedings{,
-  title={},
-  author={},
-  booktitle={},
-  volume={},
-  year={},
-  organization={}
+@article{mehrtash2018automatic,
+  title={Automatic needle segmentation and localization in MRI with 3-D convolutional neural networks: application to MRI-targeted prostate biopsy},
+  author={Mehrtash, Alireza and Ghafoorian, Mohsen and Pernelle, Guillaume and Ziaei, Alireza and Heslinga, Friso G and Tuncali, Kemal and Fedorov, Andriy and Kikinis, Ron and Tempany, Clare M and Wells, William M and others},
+  journal={IEEE transactions on medical imaging},
+  volume={38},
+  number={4},
+  pages={1026--1036},
+  year={2018},
+  publisher={IEEE}
 }
 ```
 
